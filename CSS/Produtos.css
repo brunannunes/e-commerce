@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#1E3513;;
+    --black: #000000;
+    --light-color:#FFF;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0.1);
+}
+
+*{
+    font-family: 'Inria Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+
+header img{
+    width: 100px;
+    height: 100px;
+
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: black;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #FFF;
+    background:#1E3513;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #000000;
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #FFF;
+    background:#1E3513;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.header .search-form {
+   height: 90%;
+   width: 90%;
+   background:#FFF;
+   text-transform: none;
+   font-size: 1 .6rem;
+   color: black;
+   padding: 0 1.5rem;
+
+}
+
+#search-form #search-box{
+   height: 25px;
+    width: 300px;
+    font-size: 1.5rem;
+    padding-right: 1.8rem;
+    color:black;
+    cursor: pointer;
+    background: #eee;
+    border-radius: 0.8rem;
+    border: none;
+}
+
+#search-box::placeholder {
+    padding-left: 8px;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+}
+
+.banner .box-banner img{
+    width: 60px;
+    height: 60px;
+}
+
+.sub-heading{
+    text-align: center;
+    color: #1E3513; 
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.box button, .last-box button{
+    text-align: center;
+    background-color: #1E3513;
+    border-radius: 5px;
+    width:100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.box button:hover, .last-box button:hover {
+    background-color: black;
+    width: 120px;
+}
+
+
+.box  .comprar , .last-box button a {
+    text-decoration: none;
+    color: white;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+}
+
+.box{
+    margin-right: 29%;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, auto));
+}
+
+.vestidos .box-container .box, .last-box{
+    padding: 2.5rem;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.vestidos .box-container .box .fa-heart,
+.vestidos .box-container .box .fa-eye,
+.vestidos .box-container .last-box .fa-heart,
+.vestidos .box-container .last-box .fa-eye
+
+{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.vestidos .box-container .box .fa-heart:hover,
+.vestidos .box-container .box .fa-eye:hover,
+.vestidos .box-container .last-box .fa-heart:hover,
+.vestidos .box-container .last-box .fa-eye:hover{
+    background:#1E3513;
+    color: #FFF;
+}
+
+.vestidos .box-container .box .fa-heart, 
+.vestidos .box-container .last-box .fa-heart{
+    right: -15rem;
+}
+
+.vestidos .box-container .box .fa-eye,
+.vestidos .box-container .last-box .fa-eye{
+    left: -15rem;
+}
+
+.vestidos .box-container .box:hover .fa-heart,
+.vestidos .box-container .last-box:hover .fa-heart{
+    right: 1.5rem;
+}
+
+.vestidos .box-container .box:hover .fa-eye,
+.vestidos .box-container .last-box:hover .fa-eye{
+    left: 1.5rem;
+}
+
+section img{
+    width: 30rem 0;
+    height: 36rem;
+    
+}
+
+.vestidos .box-container .box h3,
+.vestidos .box-container .last-box h3{
+    color: #000000;
+    font-size: 2.3rem;
+}
+
+.vestidos .box-container .box .stars,
+.vestidos .box-container .last-box .stars{
+   padding: 1rem 0;
+}
+
+.vestidos .box-container .box .stars i,
+.vestidos .box-container .last-box .stars i{
+    font-size: 2.3rem;
+    color: black;
+}
+
+.vestidos .box-container .box span,
+.vestidos .box-container .last-box span{
+    color: black;
+    margin-right: 1rem;
+    font-size: 2.3rem;
+}   
+
+.banner .box-banner img{
+    height: 600px;
+}
+
+.banner-container {
+    height: 600px;
+    width: 100%;
+}
+
+.banner-container img {
+    width: 100%;
+    height: 100%;
+}
+footer .container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: var(--box-shadow);
+    margin-top: 100px;
+    background-color: #1E3513;
+}
+
+.box-footer h3{
+    font-size: 2.5rem;
+    color:white;
+}
+
+.box-footer a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    color:white;
+}
+
+
+footer .container-footer .box-footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+@media (max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background: #FFF;
+        border-top: .1rem solid rgba(0,0,0.2);
+        border-bottom: .1rem solid rgba(0,0,0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem ;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box{
+        width: 90%;
+        margin:  0.1rem;
+    }
+
+}

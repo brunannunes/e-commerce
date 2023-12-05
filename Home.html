@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilma's</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet"  href="./CSS/home.css">
+
+    <link rel="stylesheet" href="./CSS/slider.css">
+
+    <script src="./JS/home.js" type="module" defer></script>
+    <script src="./JS/script.js" defer></script>
+
+
+ 
+
+</head>
+<body>
+
+<!--cabeçalho-->
+
+<header>
+    <a href="#" class="logo"> <img src="./imagem/Logo.png"></a> 
+
+    <nav class="navbar">
+        <a class="active" href="Index.html">home</a>
+        <a href="produtos.html">produtos</a>
+        <a href="Sobre.html">sobre nós</a>
+        <a href="Contato.html">contato</a>
+    </nav>
+
+    <form action="" id="search-form">
+        <input type="search" id="search-box" placeholder="pesquise">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+       <a href="./Login.html" class="bx bxs-user"></a>
+        <a href="./carrinho.html" class="fas fa-shopping-cart"></a>
+    </div>
+
+
+
+</header>
+<!--fim do cabeçalho-->
+
+
+<!--slider-->
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+
+        <div class="slide first">
+            <img src="./Imagem/slider_1.png">
+        </div>
+
+        <div class="slide">
+            <img src="./Imagem/slider_2.png">
+        </div>
+
+        <div class="slide">
+            <img src="./Imagem/slider1.webp">
+        </div>
+        
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+    </div>
+
+    <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+    </div>
+</div>
+<!--fim do slider-->
+
+<section class="vestidos" id="vestidos">
+    
+    <h3 class="sub-heading"> nossas vestidos</h3>
+    <h1 class="heading"> vestidos</h1>
+
+    <!--produtos no JS-->
+
+    <div class="box-container" id = "nossos_vestidos">
+       
+        <!-- <div class="box">
+           <a href="#" class="fas fa-heart"></a>
+           <a href="./martelo.html" class="fas fa-eye"></a>
+           <a href="./Produto1.html"><img src="./imagem/produto1.png" alt=""></a>
+           <h3>vestido simples</h3>
+           <span>$59.00</span>
+           <button><a href="#" class="btn-martelo">adicionar</a></button>
+        </div>
+
+
+         <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Produto2.html"><img src="./imagem/produto2.png" alt=""></a>
+            <h3>vestido curto</h3>
+            <span>$59.00</span>
+           <button><a href="#" class="btn-chave">adicionar</a></button>
+         </div>
+
+         <div class="last-box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Produto3.html"><img src="./imagem/produto3.png" alt=""></a>
+            <h3>vestido de ceda</h3>
+            <span>$59.00</span>
+            <button><a href="#" class="btn-alicate">adicionar</a></button>
+         </div> -->
+
+    </div>
+
+</section>
+
+<!-- 
+<section class="vestidos" id="vestidos">
+    
+    
+    <h1 class="heading">acessórios</h1>
+
+    <div class="box-container">
+       
+        <div class="box">
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-eye"></a>
+           <a href="./Acessorio1.html"><img src="./imagem/acessorio1.png" alt=""></a>
+           <h3>brinco simples</h3>
+           <span>$59.00</span>
+           <button><a href="#" class="btn">adicionar</a></button>
+        </div>
+
+
+         <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Acessorio2.html"><img src="./imagem/acessorio2.png" alt=""></a>
+            <h3>colar de pérolas</h3>
+            <span>$59.00</span>
+           <button><a href="#" class="btn">adicionar</a></button>
+         </div>
+
+         <div class="last-box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Acessorio3.html"><img src="./imagem/acessorio3.png" alt=""></a>
+            <h3>colar simples</h3>
+            <span>$59.00</span>
+            <button><a href="#" class="btn">adicionar</a></button>
+         </div>
+
+    </div>
+
+</section> -->
+
+
+<!--banner-->
+
+<div class="banner">
+    <div class="banner-container">
+        <img src="./Imagem/banner.png" alt="">
+    </div>
+</div>
+
+<section class="vestidos">
+
+    <!--produtos no JS-->
+    
+    <h1 class="heading">destaques</h1>
+
+    <div class="box-container" id="produtos_destaques"> 
+        <!-- <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Produto4.html"><img src="./imagem/produto4.png" alt=""></a>
+            <h3>vestido com cauda</h3>
+            <span>$59.00</span>
+           <button><a href="#" class="btn">adicionar</a></button>
+         </div>
+    
+         <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Produto5.html"><img src="./imagem/produto5.png" alt=""></a>
+            <a href="./Produto5.html"><h3>vestido de corset</h3></a>
+            <span>$59.00</span>
+           <button><a href="#" class="btn">adicionar</a></button>
+         </div>
+    
+         <div class="last-box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="./Produto6.html"><img src="./imagem/produto6.png" alt=""></a>
+            <h3>vestido com camdas</h3>
+            <span>$59.00</span>
+           <button><a href="#" class="btn">adicionar</a></button>
+         </div> -->
+    </div> 
+</section>
+
+
+
+
+<!--rodapé-->
+<footer>
+    <div class="container-footer">
+        <div class="box-footer">
+            <h3>location</h3>
+            <a href="#">Nordeste</a>
+            <a href="#">Sudeste</a>
+            <a href="#">Sul</a>
+            <a href="#">Centro-oeste</a>
+        </div>
+
+        <div class="box-footer">
+            <h3>nossas redes sociais</h3>
+            <a href="#">Instagram: BSH_FERRAMENTAS</a>
+            <a href="#">Facebook: BSH_FERRAMENTAS</a>
+            <a href="#">Whatsapp: 199876578856</a>
+            <a href="#">E-mail: BSH@gmail.com</a>
+        </div>
+
+        <div class="box-footer">
+            <h3>nos contate</h3>
+            <a href="#">1992837465</a>
+            <a href="#">324563367</a>
+            <a href="#">BSH@gmail.com</a>
+        </div>
+
+    </div>
+</footer>
+<!--fim do rodapé-->
+</body>
+</html>
